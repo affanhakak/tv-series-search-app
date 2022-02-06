@@ -8,7 +8,7 @@ form.addEventListener(
     const searchTerm =
       form.elements.query.value;
     const res = await axios.get(
-      `http://api.tvmaze.com/search/shows?q=${searchTerm}`
+      `https://api.tvmaze.com/search/shows?q=${searchTerm}`
     );
     makeImages(res.data);
     form.elements.query.value = "";
